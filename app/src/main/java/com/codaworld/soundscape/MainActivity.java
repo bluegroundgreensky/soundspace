@@ -71,8 +71,10 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
 
-                    p.seekTo(progress);
+                   if(fromUser==true) {
 
+                       p.seekTo(progress);
+                   }
             }
 
             @Override
